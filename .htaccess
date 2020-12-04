@@ -1,0 +1,4 @@
+# kill the www prefix::
+RewriteEngine on
+RewriteCond %{HTTP_HOST} "^www"
+RewriteRule ^(.*) http://tetraminex.com/$1 [R=301]
